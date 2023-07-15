@@ -2,5 +2,4 @@ FROM python
 EXPOSE 8000
 RUN python -m pip install Django
 RUN python -m django --version
-RUN mkdir devOpsProject
-COPY devOpsProject /devOpsProject
+RUN django-admin startproject devOpsProject
